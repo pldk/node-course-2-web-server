@@ -49,6 +49,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects',
+    projectMessage: 'Welcome on our project nodepage!'
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
   error: 'true',
